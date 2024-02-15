@@ -25,3 +25,13 @@
   border-top: solid 1px #aaa;
   overflow: hidden;
 }
+
+.container-about {
+  clear: both; /* Clear floats */
+}
+.container-about img {
+    float: right; /* Float the image to the left */
+    margin-left: 20px; /* Add space between the image and text */
+    margin-bottom: px; /* Add bottom margin to separate sections */
+    margin-top:20
+}
