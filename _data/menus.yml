@@ -10,6 +10,6 @@
   absoluteUrl: true
   url: "https://scholar.google.co.uk/citations?hl=en&user=5rsOUQ8AAAAJ"
 
-- "Posts"
+- title: "Posts"
   default: menu_posts
   url:   "posts"
