@@ -2,11 +2,11 @@
   url:   ""
 
 - default: menu_category
-  url:   "category"
+  url:   "links"
 
-- title: "Jekyll Paper"
+- title: "Papers"
   absoluteUrl: true
-  url: "https://github.com/ghosind/Jekyll-Paper"
+  url: "https://scholar.google.co.uk/citations?hl=en&user=5rsOUQ8AAAAJ"
 
 - default: menu_about
   url:   "about"
