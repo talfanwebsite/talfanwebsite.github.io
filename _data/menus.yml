@@ -1,5 +1,5 @@
 - title: "Home"
-  default: menu_index
+  default: home
   url:   ""
 
 - title "Links"
