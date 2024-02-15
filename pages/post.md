@@ -4,4 +4,5 @@ title: Posts
 permalink: /post/
 ---
 
-{% include ../_includes/posts.html %}
+{% include {{ site.baseurl }}/_includes/posts.html %}
+
