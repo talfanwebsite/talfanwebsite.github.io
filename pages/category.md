@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Category
-permalink: /category/
+title: Posts
+permalink: /post/
 ---
 
 ### Startups and tech
