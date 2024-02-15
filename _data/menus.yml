@@ -1,15 +1,12 @@
-- title: "Home"
-  default: home
+- default: menu_home
   url:   ""
 
-- title "Links"
-  default: menu_category
+- default: menu_category
   url:   "links"
 
 - title: "Papers"
   absoluteUrl: true
   url: "https://scholar.google.co.uk/citations?hl=en&user=5rsOUQ8AAAAJ"
 
-- title: "Posts"
-  default: menu_posts
+- default: menu_posts
   url:   "posts"
