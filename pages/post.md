@@ -4,4 +4,4 @@ title: Posts
 permalink: /post/
 ---
 
-{% include posts.html %}
+{% include_relative ../_includes/posts.html %}
