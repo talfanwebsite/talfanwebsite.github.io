@@ -12,11 +12,11 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #aaa;
+  color: #39CCCC;
 }
 
 a:hover {
-  color: #aaa;
+  a:hover { text-shadow: 0 0 5px #ff0000; }
 }
 
 blockquote {
