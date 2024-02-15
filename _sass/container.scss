@@ -41,3 +41,9 @@
 .text-with-image {
     overflow: hidden; /* Clear floats inside the text-with-image div */
 }
+
+.single-article hr {
+    margin: 0 0 0 0;
+    border: 0;
+    border-top: 1px solid #c9c7c7;
+}
