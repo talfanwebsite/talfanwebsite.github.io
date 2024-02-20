@@ -6,4 +6,10 @@ permalink: /post/
 
 <!-- {% include posts.html %} -->
 
-{% post_url 2018-02-11-welcome-to-jekyll.markdown %}
+<h1>Items</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a>test</li>
+  {% endfor %}
+</ul>
