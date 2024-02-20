@@ -110,7 +110,7 @@ This might seem counterintuitive, but consider these examples:
 
 **Yes** - I am saying that, given an appropriate cost-function and optimizer, it is theoretically possible to have a machine generate the entire source code of a computer’s operating system. One experiment that I’m sure we will see achieved soon is to have a deep neural network learn an _Atari_ (or _Windows 95_?) emulator by interacting via the keyboard / mouse and observing the screen outputs. I haven’t thought enough whether this would even be a surprising / notable advance.
 
-<p align="center"> <img src="emulator.png" /></p>
+<p align="center"> <img src="/assets/images/emulator.png" /></p>
 
 There are a few problems. Firstly, systems will need to have the physical capability to sense the outcomes of their behaviour. This is doable in most digital systems which have an input interface. But more broadly, there may just not be enough _signal_ or _bandwidth_ in these channels. For example, _Netflix_, as good as its reccomender system is, doesn’t yet have the sensing capability to hear you crying (but maybe _Alexa_ does) or smell your tears, so it won’t suggest that you watch \*_insert feel-good smash-hit romcom of the year_\* if you’re having a tough time. It will probably still suggest you watch Louis Theroux’s _Altered States_.
 
