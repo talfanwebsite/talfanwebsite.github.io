@@ -1,34 +1,50 @@
 ---
 layout: post
-title:  "Welcome to Jekyll Paper!"
+title:  "Future desiderata"
 date:   2018-02-11
-last_modified_at: 2018-09-20
-categories: [Jekyll Paper]
-tags: [Getting Start]
+last_modified_at: 2021-09-04
+categories:
+tags:
 ---
 
-Jekyll Paper is a Jekyll theme, it is designed to helping you to create your own blog by the easiest way. Now, you can learn how to use this blog by this post.
+##### 09\_04\_2021
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and reload the page to see your changes. You can edit this post on Github or your local repository copy.
+I was reading an interview on [Noah Smith’s Substack](NoahPinion) with [Patrick Collison](https://patrickcollison.com), who is the co-founder and CEO of Stripe. Link to original article [here](https://noahpinion.substack.com/p/interview-patrick-collison-co-founder?utm_campaign=Matt%27s%20Thoughts%20In%20Between&utm_medium=email&utm_source=Revue%20newsletter), it’s a super interesting interview. In one section, Patrick reels off a list of desirable future technologies. He begins:
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.md` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+> “In terms of what the world needs, improvements in medical technology are probably still #1. Climate change mitigation technology (cleaner energy generation and CO2 sequestration and so on) is also quite high up. More broadly, we need to make all of the things that you and I enjoy every day cheap and efficient enough for billions more people to afford (with safety/security high on that list)”.
 
-Jekyll also offers powerful support for code snippets:
+But then the list continues:
 
-```c
-#include <stdio.h>
+*   $100 robotic sugeries.
+*   A machine for cheaply manufacturing arbitrary food.
+*   A 3D printer for nourishment into which you just insert elemental “ink cartridges”.
+*   Flying cars, obviously.
+*   Space-based earth-to-earth transportation.
+*   Fast-growing trees so that everywhere can be as blissfully arboreal as you like.
+*   Cities that look like [this](https://twitter.com/patrickc/status/1214662478883241984).
+*   Technology for comprehensively eliminating air pollution (not just from internal combustion engines but also sand, dust, etc.)
+*   Ubiquitous detectors for toxins like lead, arsenic and benzene.
+*   Smart books that are better fir for purpose.
+*   A babelfish that works.
+*   Programming environments that are less hopelessly primitive than those today. (Take _Mathematica_/ _Squeak_ / _Genera_ and go far beyond them).
+*   Better education technology for everyone. What’s _Khan Academy_ but 10x better?
+*   Too-cheap-to-meter water desalination.
+*   Batteries with so much energy density that they need never be recharged.
+*   Nanotechnology
+*   Materials science:
+    *   Self-repairing wood.
+    *   Flexible glass.
+    *   Translucent steel.
+    *   Completely new kinds of matter.
+*   Quantum computers that accurately simulate physical chemistry.
+*   Better catalysts for all major chemical processes.
 
-int main(int argc, char *argv[]) {
-  printf("Hello World!\n");
-  return 0;
-}
+A peculiar feature of human psychology is that we seem to be very good at getting used to the current state of the world, to the extent that it feels very hard sometimes to broader our imaginations and imagine a different one. A common mindset of silicon valley CEO types is one of recognizing these limitations and thinking menaingfully about how to consciously correct them. Sam Altman [wrote recently](https://moores.samaltman.com):
 
-// => prints 'Hello World!' to STDOUT.
-```
+> The technological progress we make in the next 100 years will be far larger than all we’ve made since we first controlled fire and invented the wheel. We have already built AI systems that can learn and do useful things. They are still primitive, **but the trendlines are clear**.
 
-Check out the [Jekyll Paper docs][jekyll-paper-docs] or [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. If you have questions or suggestions, you can create an issue to asking them on [Jekyll Paper Issues][jekyll-paper-issues] or [Jekyll Talk][jekyll-talk].
+Forcing oneself to think on un-naturally long timescales seems like a super-power, if done right. Of course, he may well be wrong in this particular case - there are plenty of examples of [trend lines that don’t extrapolate](https://en.wikipedia.org/wiki/Black_swan_theory).
 
-[jekyll-paper-docs]: https://github.com/ghosind/Jekyll-Paper/wiki
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-paper-issues]: https://github.com/ghosind/Jekyll-Paper/issues
-[jekyll-talk]: https://talk.jekyllrb.com/
+But reading this list really made me aware of how many things that _I don’t know that I don’t think about_ day-to-day (contrast this to things that I do know that I don’t think about, the [“known unknowns”](https://en.wikipedia.org/wiki/There_are_known_knowns). I like to think that if I were bor in the 50s, I might have been able to imagine the iPhone, or the internet. But is this just wishful thinking? Ideas like these seem self-evident in retrospect but take huge leaps of imagination to get to. This is partly why scientific research takes so long. Did you ever consider how strange it is that a huge chunk of mathematics, which took humanity tens of thousands of years to develop , is today taught to most early high school kids?
+
+I think that before anyone embarks on a research career, they should ask themselves if they’d be happy to spend years of their life researching something that they could explain (the gist of) to an interested layman in an elevator. For me at least, the [pleasure is in the finding out](https://en.wikipedia.org/wiki/The_Pleasure_of_Finding_Things_Out).
