@@ -4,5 +4,5 @@ title: Posts
 permalink: /post/
 ---
 
-{% include posts.html %}
+<!-- {% include posts.html %} -->
 
