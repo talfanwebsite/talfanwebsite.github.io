@@ -6,3 +6,4 @@ permalink: /post/
 
 <!-- {% include posts.html %} -->
 
+Test
