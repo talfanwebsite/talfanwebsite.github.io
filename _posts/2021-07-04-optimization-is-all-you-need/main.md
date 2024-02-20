@@ -30,7 +30,7 @@ Searle’s intention was to raise the question of whether a system based only on
 
 But that’s a bit of an open-ended and philosophical question, certainly not one we’re going to get to the bottom of here. A more testable engineering question is - could a system built on rules emulate intelligence in a passable way? It seems that the answer from the “expert systems” experiment is a tentative no. The common failure mode among these approaches was that, although some systems could perform well in small and constrained scenarios, they would fail to scale up - or “generalize” to new task outside of the types of data that they were engineered to work with. In a word, they were brittle. And no matter how big the rule book was made, the problem wouldn’t go away.
 
-<p align="center"> <img src="expert_system.gif" /></p>
+<p align="center"> <img src="/assets/images/expert_system.gif" /></p>
 
 This isn’t to say that “expert” or “rule-based” systems aren’t _useful_. They are - as long as either:
 
@@ -46,7 +46,7 @@ Optimization is all you need
 
 Did you ever wonder what was the use of learning calculus in school? Unless you work in a technical field, you’ve probably never since had to differentiate a curve and find its minimum:
 
-<p align="center"> <img src="optimization.png" /></p>
+<p align="center"> <img src="/assets/images/optimization.png" /></p>
 
 Well I’ll tell you who/what is doing this: modern machine learning systems, _almost all of the time_. If you had to summarize modern machine learning, AI (and “big data”), it would essentially boil down to:
 
@@ -137,7 +137,7 @@ Luckily, in nature there is a lot of structure that is reusable. A very useful o
 
 This kind of bias is called “translation invariance”, since the features that our algorithm is learning to detect can be found anywhere in the image. A more famous example is [_Occam’s Razor_](https://en.wikipedia.org/wiki/Occam%27s_razor), which says that you should try to find the minimally complex model that can explain your data before trying out the fancy ones.
 
-<p align="center"> <img src="inductive_bias.jpg" /> </p>
+<p align="center"> <img src="/assets/images/inductive_bias.jpg" /> </p>
 <p align="center"> <em>Which is the right fit: b), c) or d)?</em></p>    
 
 But there is always a cost to using any inductive bias. For example, if it’s actually true that a feature only ever appears at a specific location in an image (e.g. a mouth is always near the bottom of a face, assuming the portrait is the right way up), then you’re wasting your time by searching people’s foreheads for mouths.
