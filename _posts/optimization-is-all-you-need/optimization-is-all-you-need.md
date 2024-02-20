@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Optimization is All You Need (Part 1: Digital)"
+date:   2021-07-04
+last_modified_at: 2021-07-04
+categories:
+tags:
+---
+
 Optimization is All You Need (Part 1: Digital)
 ==============================================
 
