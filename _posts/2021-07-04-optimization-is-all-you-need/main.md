@@ -16,8 +16,6 @@ Learning is a fundamental feature of the natural world but a fairly recent addit
 
 <img align="right" src="clippy.png" alt="Clippy">
 
-![test image](clippy.png)
-
 When you stop to think about it, until ~5-10 years ago - i.e. before [AlexNet](https://en.wikipedia.org/wiki/AlexNet) brought AI back to life, computers really did almost _zero_ learning, in the naturalistic sense of the word. When I talk about learning, what I really mean is the process of automatic adaptation to some signal from / interaction with the environment (environment = _the world outside the computer_).
 
 “Hang on”, you might be thinking. “But what about [_Clippy_](https://en.wikipedia.org/wiki/Office_Assistant)?”. That loveable rapscallion (/sinister creep). He was intelligent, right? It’s true that _Clippy_ could offer suggestions to help your workflow by, for example, formatting your document as a letter when you start typing “Dear so and so…”. And yes, it’s true that some software can ‘learn’ our user preferences in a very narrow sense. But these are not learned behaviours. If _Clippy_ were really intelligent, he would learn after the first few times you hide him that his help just isn’t wanted. Sure, it was cute the first or second time. But really _Clippy_, get the hint.
