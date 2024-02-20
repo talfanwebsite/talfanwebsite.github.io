@@ -14,7 +14,7 @@ Cognitive scientists and AI researchers spend most of their time trying to figur
 
 Learning is a fundamental feature of the natural world but a fairly recent addition to the human-engineered one. Computers are a mature technology (we know a lot about how to build them and we can do it very cheaply) and it’s tempting to think of them as “intelligent” machines. But even though a lot has changed in recent years, they are still by and large just static data processing instruments.
 
-<img align="right" src="clippy.png" alt="Clippy">
+<img align="right" src="images/clippy.png" alt="Clippy">
 
 When you stop to think about it, until ~5-10 years ago - i.e. before [AlexNet](https://en.wikipedia.org/wiki/AlexNet) brought AI back to life, computers really did almost _zero_ learning, in the naturalistic sense of the word. When I talk about learning, what I really mean is the process of automatic adaptation to some signal from / interaction with the environment (environment = _the world outside the computer_).
 
