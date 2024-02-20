@@ -18,7 +18,7 @@ email: talfan at google dot com
 name: Talfan Evans
 description: >- # this means to ignore newlines until "baseurl:"
 keywords: [Active Learning, Computer Vision, Machine Learning, Neuroscience, Startups, Tech]
-baseurl: "https://talfanevans.co.uk" # the subpath of your site, e.g. /blog
+baseurl: "/talfanwebsite.github.io" # the subpath of your site, e.g. /blog
 url: "http://talfanevans.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 domain: "talfanevans.co.uk" # the domain name for your site, e.g. example.com
 language: en
