@@ -7,6 +7,14 @@
     max-width: 300px;
   }
 
+  /* Main window */
+  .container-wrapper {
+  width: 100%;
+  margin: 0 10px;
+  max-width: 768;
+  font-size: 14px;
+  }
+
   /* Posts list */
   .posts-list-pagination {
     margin: 10px 0 5px 0;
