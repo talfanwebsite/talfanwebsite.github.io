@@ -4,15 +4,16 @@
   /* reset default styles */
   img {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
+    max-height: 200px;
   }
 
   /* Main window */
   .container-wrapper {
-  width: 100%;
-  margin: 0 10px;
-  max-width: 768;
-  font-size: 14px;
+    width: 100%;
+    margin: 0 10px;
+    max-width: 768;
+    font-size: 14px;
   }
 
   /* Posts list */
