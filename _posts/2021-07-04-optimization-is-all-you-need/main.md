@@ -60,7 +60,7 @@ $$
 = [\text{probability of appearing}, \text{smirkiness}]
 $$
 
-*   An optimizer, whose only job is to minimize the cost function. I.e. find the parameters \\(\theta\) that, in this case, make \\(J(\theta)\) as big or as small as possible. It might for example measure user happiness as a function of the parameters like so:
+*   An optimizer, whose only job is to minimize the cost function. I.e. find the parameters \\(\theta\\) that, in this case, make \\(J(\theta)\\) as big or as small as possible. It might for example measure user happiness as a function of the parameters like so:
 
 $$
 J_{\text{Happiness}}(\theta_{\text{Clippy}}) = - (\theta_0^2 + \theta_1^2)
