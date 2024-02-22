@@ -28,7 +28,7 @@ In the 80s, artificial intelligence researchers thought that this was a good rou
 
 This is broadly the “Chinese Room” thought experiment proposed by the computer scientist John Searle. It says that intelligence is nothing but a big rule book. Searle asks us to imagine a machine that is capable of “understanding” the Chinese language, by which he means that, given some Chinese symbols as input (e.g. some question) it would produce some useful symbols in return (e.g. an answer). But it turns out that this machine is just a big input / output table, with entries for _looottsss_ of different questions.
 
-Searle’s intention was to raise the question of whether a system based only on fixed rules could be regarded as “intelligent” - i.e. whether the system could in fact “understand” Chinese in the way you and I might think we “understand” the English in this article[1](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:1).
+Searle’s intention was to raise the question of whether a system based only on fixed rules could be regarded as “intelligent” - i.e. whether the system could in fact “understand” Chinese in the way you and I might think we “understand” the English in this article [1](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:1).
 
 But that’s a bit of an open-ended and philosophical question, certainly not one we’re going to get to the bottom of here. A more testable engineering question is - could a system built on rules emulate intelligence in a passable way? It seems that the answer from the “expert systems” experiment is a tentative no. The common failure mode among these approaches was that, although some systems could perform well in small and constrained scenarios, they would fail to scale up - or “generalize” to new task outside of the types of data that they were engineered to work with. In a word, they were brittle. And no matter how big the rule book was made, the problem wouldn’t go away.
 
@@ -52,7 +52,7 @@ Did you ever wonder what was the use of learning calculus in school? Unless you 
 
 Well I’ll tell you who/what is doing this: modern machine learning systems, _almost all of the time_. If you had to summarize modern machine learning, AI (and “big data”), it would essentially boil down to:
 
-*   A cost function $J(\theta)$, which takes some parameters $\theta$. Think of $\theta$ as a list of things that could be changed in your system. For example:
+*   A cost function \(J(\theta)\), which takes some parameters \(\theta\). Think of \(\theta\) as a list of things that could be changed in your system. For example:
 
 $$
 θ_{\text{Clippy}}
@@ -60,18 +60,18 @@ $$
 = [\text{probability of appearing}, \text{smirkiness}]
 $$
 
-*   An optimizer, whose only job is to minimize the cost function. I.e. find the parameters $\theta$ that, in this case, make $J(\theta)$ as big or as small as possible. It might for example measure user happiness as a function of the parameters like so:
+*   An optimizer, whose only job is to minimize the cost function. I.e. find the parameters \(\theta\) that, in this case, make \(J(\theta)\) as big or as small as possible. It might for example measure user happiness as a function of the parameters like so:
 
 $$
 J_{\text{Happiness}}(\theta_{\text{Clippy}}) = - (\theta_0^2 + \theta_1^2)
 $$
 
 
-Hopefully, the optimizer would discover the optimal parameters $θ^* = \text{arg max}_{\theta} J(θ) = [0, 0]$ (don’t show your face around here again, \*Clippy\*).
+Hopefully, the optimizer would discover the optimal parameters \(θ^* = \text{arg max}_{\theta} J(θ) = [0, 0]\) (don’t show your face around here again, \*Clippy\*).
 
 A cost function could be anything. Often it’s something like minimizing the “error” of some prediction. Predicting what products people want to buy, so that they can be rady to ship from the warehouse. Predicting what the weather will be like three days from now so that we can start marinading for the barbecue. A slightly different flavour of AI is concerned with the opposite thing - maximizing (not minimizing) a “reward function”. Programming a computer to play chess, or [Go](https://deepmind.com/research/case-studies/alphago-the-story-so-far), or to collect gold coins in an [_Atari_ game](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf).
 
-But whether you’re talking about maximimzing or minimizing, you’re still just **optimizing**. Finding the point of inflection in your $J(\theta)$ curve.
+But whether you’re talking about maximimzing or minimizing, you’re still just **optimizing**. Finding the point of inflection in your \(J(\theta)\) curve.
 
 The crucial difference between a system that is able to optimize for some function and a system with pre-programmed rules, is that the optimizable system can in theory reach an infinite number of different conclusions based on the interactions it has with the environment. And you won’t find these conclusions written anywhere in the code, at least, not in any spoken language. This is broadly not true of expert systems, which are essentially just big decision trees. The leaves may be many, but they’re finite.
 
@@ -125,13 +125,13 @@ But an equally big problem, which is the day-to-day concern of most of AI resear
 Inductive biases
 ----------------
 
-Finding the minimium of the curve by finding the optimal parameters $\theta^*$ is in many cases a completely hopeless problem. Think about how you would go about deciding how best to lay the table for dinner. If you have CCC pieces of cutlery and an equal number of spots on the table in which you could place them (e.g. _spoon - fork - plate - knife - … - fishknife?_), then there are $N! = N(N−1)(N−2)…(1)$ possible ways to do it. For 6 pieces of cutlery that’s 720 possible permuations. And that’s just one place setting!
+Finding the minimium of the curve by finding the optimal parameters \(\theta^*\) is in many cases a completely hopeless problem. Think about how you would go about deciding how best to lay the table for dinner. If you have \(N\) pieces of cutlery and an equal number of spots on the table in which you could place them (e.g. _spoon - fork - plate - knife - … - fishknife?_), then there are \(N! = N(N−1)(N−2)…(1)\) possible ways to do it. For 6 pieces of cutlery that’s 720 possible permuations. And that’s just one place setting!
 
 This is a type of optimization, where our cost-function is the overall ease with which our guests will be able to tackle their dinners. If you misallocate the spoons, someone’s going to have get creative with their fork when the soup course comes. Which could be messy. Which can also be factored into you cost function.
 
 So where to start? Well luckily, we’re saved by having some kind of domain knowledge. We know that if we place a plate at one setting, then we’ll also need a glass instead of another plate. Nobody’s likely to need four forks. So in practice, we just have to search through the likely combinations - each place setting should have at least a knife, fork, plate and some kind of spoon.
 
-This domain knowledge applies to the cooking as well. Most of us don’t think “_hmm, maybe I’ll roast the rest of the muesli and serve it with pesto and spring greens_”, because that would be bonkers. And if we did, we’d spend a lot of time thinking through crazy combinations, most of which would suck. Instead, we’re most of us more concerned with whether that wine will go with fish, etc.
+This domain knowledge applies to the cooking as well. Most of us don’t think “_hmm, maybe I’ll roast the rest of the muesli and serve it with pesto and spring greens_”, because just...no. And if we did, we’d spend a lot of time thinking through crazy combinations, most of which would suck. Instead, we’re most of us more concerned with whether that wine will go with fish, etc.
 
 In short, we know ahead of time which are the likely solutions to consider and explore those first. AI researchers call these intuitions / helpful constraints “inductive biases”. Finding the right inductive biases is arguably _all_ of optimization. Think of inductive biases as reflecting some inherent structure in the problem you’re trying to solve. If we always had the right inductive bias, we could solve these problems in an instant. But the problem is finding them.
 
@@ -156,13 +156,13 @@ Cranking the lever
 If everything were that simple, we’d be [in the future](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/www.talfanevans.co.uk/posts/patrick_collison_desiderata) already. But in practice, for lots of real world problems either:
 
 *   The priors exist, but we have so little data relative to the complexity of the problem that there’s no hope of being able to find them.
-*   The priors really don’t exist. Like predicting which card is picked randomly from a well shuffled deck (without replacement[2](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:2)).
+*   The priors really don’t exist. Like predicting which card is picked randomly from a well shuffled deck (without replacement [2](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:2)).
 
 What do we do in these cases? Well, we can always just [shut up and calculate](https://www.math.columbia.edu/~woit/wordpress/?p=9649). This would mean for example, doing a “brute force search” over all possible answers (if they’re finite), or doing some very basic form of optimization with no problems-specific structure (i.e. your algorithm has a “flat” or uniform prior).
 
-The funny thing is that the current-state-of-the-art in optimization is dominated by a very standard toolset. Almost all methods are based on a flavour of something called [“gradient descent”](https://en.wikipedia.org/wiki/Gradient_descent)[3](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:3). The basic idea, which we alluded to earlier when we talked about finding the minimum of our $J(\theta)$, is to always try to head “downhill” (to find a minimum), until you can’t go downhill any more. Then, you stop, find a nice rock to sit on, open your lunchbox and consider whether to hike over that big mountain in the distance to get to the next valley (because that valley might be lower - remember we’re trying to get to the lowest point in this convoluted analogy[4](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:4)).
+The funny thing is that the current-state-of-the-art in optimization is dominated by a very standard toolset. Almost all methods are based on a flavour of something called [“gradient descent”](https://en.wikipedia.org/wiki/Gradient_descent) [3](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:3). The basic idea, which we alluded to earlier when we talked about finding the minimum of our \(J(\theta)\), is to always try to head “downhill” (to find a minimum), until you can’t go downhill any more. Then, you stop, find a nice rock to sit on, open your lunchbox and consider whether to hike over that big mountain in the distance to get to the next valley (because that valley might be lower - remember we’re trying to get to the lowest point in this convoluted analogy [4](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:4)).
 
-The types of cost-functions that we often optimize are also more-often than not quite simple. For example, the ‘squared-error’ loss is really useful when you want to make the absolute value of some quantity really small without making it negative. For example, you want to minimize the number of answers nnn you get wrong $J(n) = \frac{n}{N}$​. You could make this _infinitely_ small by making nnn an infinitely large negative number like $n = -\infty$, but that wouldn’t make any practical sense. So instead you minimize $J(n) = (\frac{n}{N})^2$.
+The types of cost-functions that we often optimize are also more-often than not quite simple. For example, the ‘squared-error’ loss is really useful when you want to make the absolute value of some quantity really small without making it negative. For example, you want to minimize the number of answers nnn you get wrong \(J(n) = \frac{n}{N}\)​. You could make this _infinitely_ small by making nnn an infinitely large negative number like \(n = -\infty\), but that wouldn’t make any practical sense. So instead you minimize \(J(n) = (\frac{n}{N})\).
 
 What’s really interesting is that these types of mathematical designs often have physical analogues in the real world. That is to say - the types of problems we’re interested in solving with AI are often identical to problems that are being solved by physical systems, _almost all of the time_.
 
