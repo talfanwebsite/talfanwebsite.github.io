@@ -52,7 +52,7 @@ Did you ever wonder what was the use of learning calculus in school? Unless you 
 
 Well I’ll tell you who/what is doing this: modern machine learning systems, _almost all of the time_. If you had to summarize modern machine learning, AI (and “big data”), it would essentially boil down to:
 
-*   A cost function \\(J(\theta)\\), which takes some parameters \(\theta\). Think of \(\theta\) as a list of things that could be changed in your system. For example:
+*   A cost function \\(J(\theta)\\), which takes some parameters \\(\theta\\). Think of \\(\theta\\) as a list of things that could be changed in your system. For example:
 
 $$
 θ_{\text{Clippy}}
@@ -60,18 +60,18 @@ $$
 = [\text{probability of appearing}, \text{smirkiness}]
 $$
 
-*   An optimizer, whose only job is to minimize the cost function. I.e. find the parameters \(\theta\) that, in this case, make \(J(\theta)\) as big or as small as possible. It might for example measure user happiness as a function of the parameters like so:
+*   An optimizer, whose only job is to minimize the cost function. I.e. find the parameters \\(\theta\) that, in this case, make \\(J(\theta)\) as big or as small as possible. It might for example measure user happiness as a function of the parameters like so:
 
 $$
 J_{\text{Happiness}}(\theta_{\text{Clippy}}) = - (\theta_0^2 + \theta_1^2)
 $$
 
 
-Hopefully, the optimizer would discover the optimal parameters \(θ^* = \text{arg max}_{\theta} J(θ) = [0, 0]\) (don’t show your face around here again, \*Clippy\*).
+Hopefully, the optimizer would discover the optimal parameters \\(θ^* = \text{arg max}_{\theta} J(θ) = [0, 0]\\) (don’t show your face around here again, \*Clippy\*).
 
 A cost function could be anything. Often it’s something like minimizing the “error” of some prediction. Predicting what products people want to buy, so that they can be rady to ship from the warehouse. Predicting what the weather will be like three days from now so that we can start marinading for the barbecue. A slightly different flavour of AI is concerned with the opposite thing - maximizing (not minimizing) a “reward function”. Programming a computer to play chess, or [Go](https://deepmind.com/research/case-studies/alphago-the-story-so-far), or to collect gold coins in an [_Atari_ game](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf).
 
-But whether you’re talking about maximimzing or minimizing, you’re still just **optimizing**. Finding the point of inflection in your \(J(\theta)\) curve.
+But whether you’re talking about maximimzing or minimizing, you’re still just **optimizing**. Finding the point of inflection in your \\(J(\theta)\\) curve.
 
 The crucial difference between a system that is able to optimize for some function and a system with pre-programmed rules, is that the optimizable system can in theory reach an infinite number of different conclusions based on the interactions it has with the environment. And you won’t find these conclusions written anywhere in the code, at least, not in any spoken language. This is broadly not true of expert systems, which are essentially just big decision trees. The leaves may be many, but they’re finite.
 
@@ -110,7 +110,7 @@ This might seem counterintuitive, but consider these examples:
 *   My phone regularly autocorrects my name (Talfan), to one of either “teflon” or “tailfin”. I (usually) correct this, which is annoying to have to do. So, the goal of an adaptive autocorrecter program would be to modify its behaviour so as to prevent me from having to correct this in future. I.e. minimize the number of “interactions” I have with the interface.
 *   One could also measure “interactions” not in terms of discrete events, but as a continuous quantity, i.e. “time spent interacting”. This is a very broad principle - in general, I would like to spend less time filling out tax returns. If my computer could figure out how to do this for me, it would prevent me from interacting with it so much in future.
 
-**Yes** - I am saying that, given an appropriate cost-function and optimizer, it is theoretically possible to have a machine generate the entire source code of a computer’s operating system. One experiment that I’m sure we will see achieved soon is to have a deep neural network learn an _Atari_ (or _Windows 95_?) emulator by interacting via the keyboard / mouse and observing the screen outputs. I haven’t thought enough whether this would even be a surprising / notable advance.
+**Yes** - I am saying that, given an appropriate cost-function and optimizer, it is theoretically possible to have a machine generate the entire source code of a computer’s operating system. One experiment that I’m sure we will see achieved soon is to have a deep neural network learn an _Atari_ (or _Windows 95_?) emulator by interacting via the keyboard / mouse and observing the screen outputs.
 
 <p align="center"> <img src="/assets/images/emulator.png" /></p>
 
@@ -125,7 +125,7 @@ But an equally big problem, which is the day-to-day concern of most of AI resear
 Inductive biases
 ----------------
 
-Finding the minimium of the curve by finding the optimal parameters \(\theta^*\) is in many cases a completely hopeless problem. Think about how you would go about deciding how best to lay the table for dinner. If you have \(N\) pieces of cutlery and an equal number of spots on the table in which you could place them (e.g. _spoon - fork - plate - knife - … - fishknife?_), then there are \(N! = N(N−1)(N−2)…(1)\) possible ways to do it. For 6 pieces of cutlery that’s 720 possible permuations. And that’s just one place setting!
+Finding the minimium of the curve by finding the optimal parameters \\(\theta^*\\) is in many cases a completely hopeless problem. Think about how you would go about deciding how best to lay the table for dinner. If you have \(N\) pieces of cutlery and an equal number of spots on the table in which you could place them (e.g. _spoon - fork - plate - knife - … - fishknife?_), then there are \\(N! = N(N−1)(N−2)…(1)\\) possible ways to do it. For 6 pieces of cutlery that’s 720 possible permuations. And that’s just one place setting!
 
 This is a type of optimization, where our cost-function is the overall ease with which our guests will be able to tackle their dinners. If you misallocate the spoons, someone’s going to have get creative with their fork when the soup course comes. Which could be messy. Which can also be factored into you cost function.
 
@@ -160,9 +160,9 @@ If everything were that simple, we’d be [in the future](http://www.talfanevans
 
 What do we do in these cases? Well, we can always just [shut up and calculate](https://www.math.columbia.edu/~woit/wordpress/?p=9649). This would mean for example, doing a “brute force search” over all possible answers (if they’re finite), or doing some very basic form of optimization with no problems-specific structure (i.e. your algorithm has a “flat” or uniform prior).
 
-The funny thing is that the current-state-of-the-art in optimization is dominated by a very standard toolset. Almost all methods are based on a flavour of something called [“gradient descent”](https://en.wikipedia.org/wiki/Gradient_descent) [3](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:3). The basic idea, which we alluded to earlier when we talked about finding the minimum of our \(J(\theta)\), is to always try to head “downhill” (to find a minimum), until you can’t go downhill any more. Then, you stop, find a nice rock to sit on, open your lunchbox and consider whether to hike over that big mountain in the distance to get to the next valley (because that valley might be lower - remember we’re trying to get to the lowest point in this convoluted analogy [4](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:4)).
+The funny thing is that the current-state-of-the-art in optimization is dominated by a very standard toolset. Almost all methods are based on a flavour of something called [“gradient descent”](https://en.wikipedia.org/wiki/Gradient_descent) [3](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:3). The basic idea, which we alluded to earlier when we talked about finding the minimum of our \\(J(\theta)\\), is to always try to head “downhill” (to find a minimum), until you can’t go downhill any more. Then, you stop, find a nice rock to sit on, open your lunchbox and consider whether to hike over that big mountain in the distance to get to the next valley (because that valley might be lower - remember we’re trying to get to the lowest point in this convoluted analogy [4](http://www.talfanevans.co.uk/posts/optimization_is_all_you_need/optimization_is_all_you_need/#fn:4)).
 
-The types of cost-functions that we often optimize are also more-often than not quite simple. For example, the ‘squared-error’ loss is really useful when you want to make the absolute value of some quantity really small without making it negative. For example, you want to minimize the number of answers nnn you get wrong \(J(n) = \frac{n}{N}\)​. You could make this _infinitely_ small by making nnn an infinitely large negative number like \(n = -\infty\), but that wouldn’t make any practical sense. So instead you minimize \(J(n) = (\frac{n}{N})\).
+The types of cost-functions that we often optimize are also more-often than not quite simple. For example, the ‘squared-error’ loss is really useful when you want to make the absolute value of some quantity really small without making it negative. For example, you want to minimize the number of answers nnn you get wrong \\(J(n) = \frac{n}{N}\\)​. You could make this _infinitely_ small by making nnn an infinitely large negative number like \\(n = -\infty\\), but that wouldn’t make any practical sense. So instead you minimize \\(J(n) = (\frac{n}{N})\\).
 
 What’s really interesting is that these types of mathematical designs often have physical analogues in the real world. That is to say - the types of problems we’re interested in solving with AI are often identical to problems that are being solved by physical systems, _almost all of the time_.
 
