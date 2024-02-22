@@ -52,7 +52,7 @@ Did you ever wonder what was the use of learning calculus in school? Unless you 
 
 Well I’ll tell you who/what is doing this: modern machine learning systems, _almost all of the time_. If you had to summarize modern machine learning, AI (and “big data”), it would essentially boil down to:
 
-*   A cost function \(J(\theta)\), which takes some parameters \(\theta\). Think of \(\theta\) as a list of things that could be changed in your system. For example:
+*   A cost function \\(J(\theta)\\), which takes some parameters \(\theta\). Think of \(\theta\) as a list of things that could be changed in your system. For example:
 
 $$
 θ_{\text{Clippy}}
