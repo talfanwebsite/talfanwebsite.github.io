@@ -11,7 +11,7 @@ permalink: /links/
 * How could we build smart materials that self-organize and compute like living tissue?
 * Would "differentiable" materials be useful for robotics?
 * How could we build a video game that incorporates fine-tuning / in-context learning as an element of gameplay?
-* What is the best entry point for generative AI in gaming / VFX? [[1](https://akosiorek.github.io/geometry_in_image_diffusion/)]
+* What is the best entry point for generative AI in gaming / VFX? [1](https://akosiorek.github.io/geometry_in_image_diffusion/)
 * How can we build better simulators for chemistry?
 * What is the brain doing during sleep?
 
