@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Talfan Evans
-email: talfan at google dot com
+email: talfan underscore evans at outlook dot com
 name: Talfan Evans
 description: >- # this means to ignore newlines until "baseurl:"
 keywords: [Active Learning, Computer Vision, Machine Learning, Neuroscience, Startups, Tech]
